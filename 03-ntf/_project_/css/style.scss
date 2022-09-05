@@ -24,6 +24,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #8BACD9;
+
 
     .card {
         width: 350px;
@@ -49,14 +51,21 @@ body {
                 font-weight: 600;
                 font-size: 22px;
                 line-height: 28px;
-                color: #FFFFFF;
                 margin-bottom: 16px;
+
+                a {
+                    color: #FFFFFF;
+                    text-decoration: none;
+                }
+
+                a:active {
+                    color: #00FFF8;
+                }
             }
 
             p {
                 font-weight: 300;
                 line-height: 26px;
-                color: #8BACD9;
                 margin-bottom: 24px;
             }
         }
@@ -75,17 +84,51 @@ body {
                 text-transform: uppercase;
                 display: flex;
                 align-items: center;
-                img{
+
+                img {
                     margin-right: 7px;
                 }
             }
 
             &-term {
-                color: #8BACD9;
                 display: flex;
                 align-items: center;
-                img{
+
+                img {
                     margin-right: 8px;
+                }
+            }
+        }
+
+        &__author {
+            margin-top: 16px;
+            display: flex;
+            font-size: 16px;
+            line-height: 20px;
+            align-items: center;
+
+            &-avatar {
+                Width: 33px;
+                Height: 33px;
+                border: 1px solid #FFFFFF;
+                margin-right: 16px;
+                background-image: url(../images/image-avatar.png);
+                background-size: cover;
+                border-radius: 50%;
+            }
+
+            &-name {
+                span {
+                    color: #FFFFFF;
+
+                    a {
+                        color: #FFFFFF;
+                        text-decoration: none;
+                    }
+
+                    a:active {
+                        color: #00FFF8;
+                    }
                 }
             }
         }
@@ -93,9 +136,11 @@ body {
 
 
 
-
-
     }
+
+
+
+
 
 
 }
