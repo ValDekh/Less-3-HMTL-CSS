@@ -43,6 +43,22 @@ body {
             background-size: cover;
             background-color: #0d326a;
             margin-bottom: 24px;
+
+            &-bgcolor {
+                width: inherit;
+                height: inherit;
+                background: rgba(0, 255, 247, 0.514);
+                border-radius: inherit;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                display: none;
+            }
+        }
+
+        &__picture:hover .card__picture-bgcolor {
+            display: flex;
+            cursor: pointer;
         }
 
         &__content {
@@ -58,8 +74,9 @@ body {
                     text-decoration: none;
                 }
 
-                a:active {
+                a:hover {
                     color: #00FFF8;
+                    cursor: pointer;
                 }
             }
 
@@ -132,15 +149,5 @@ body {
                 }
             }
         }
-
-
-
-
     }
-
-
-
-
-
-
 }

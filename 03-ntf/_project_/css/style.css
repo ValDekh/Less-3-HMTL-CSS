@@ -42,6 +42,20 @@ body {
   background-color: #0d326a;
   margin-bottom: 24px;
 }
+.box .card__picture-bgcolor {
+  width: inherit;
+  height: inherit;
+  background: rgba(0, 255, 247, 0.514);
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.box .card__picture:hover .card__picture-bgcolor {
+  display: flex;
+  cursor: pointer;
+}
 .box .card__content h1 {
   font-weight: 600;
   font-size: 22px;
@@ -52,8 +66,9 @@ body {
   color: #FFFFFF;
   text-decoration: none;
 }
-.box .card__content h1 a:active {
+.box .card__content h1 a:hover {
   color: #00FFF8;
+  cursor: pointer;
 }
 .box .card__content p {
   font-weight: 300;
