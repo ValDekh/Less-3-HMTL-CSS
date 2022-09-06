@@ -25,6 +25,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     color: #6B7082;
+    line-height: 22px;
     background: #19A1AE;
     background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
@@ -36,13 +37,16 @@ body {
         background: #FFFFFF;
         box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
         border-radius: 15px;
+        text-align: center;
 
         &__bg {
-            width: 350px;
+            width: inherit;
             height: 140px;
             background-image: url(../images/bg-pattern-card.svg);
             border-radius: 15px 15px 0 0;
             position: relative;
+            // margin-bottom: 72px;
+
             &-avatar {
                 width: 96px;
                 height: 96px;
@@ -50,23 +54,72 @@ body {
                 border-radius: 50%;
                 background-image: url(../images/image-victor.jpg);
                 position: absolute;
-        }
+                left: 50%;
+                transform: translate(-50%, -50%);
+                top: 100%;
 
-        &__info {
-            &-name {}
 
-            &-age {}
-        }
-
-        &__data {
-            &__data-item {
-                &-quant {}
-
-                &-title {}
             }
         }
 
+        &__info {
+            padding: 72px 0 25px;
+            border-bottom: 1px solid #E8E9EC;
+
+            &-name {
+                span {
+                    font-weight: 700;
+                    margin-right: 9.5px;
+                    color: #2E3349;
+                }
+            }
+
+            &-location {
+                margin-top: 9px;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+
+        &__data {
+            display: flex;
+            margin: 24px;
+            justify-content: space-evenly;
+
+            &-item {
+                width: 60px;
+
+                &-quant {
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                    color: #2E3349;
+                }
+
+                &-title {
+                    font-size: 10px;
+                    line-height: 12px;
+                    letter-spacing: 1.5px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:400px) {
+    .box {
+        max-width: 375px;
+        background-position: 153% -321px, right 161% bottom -333px;
+        background-size: 622px 622px;
+
+        .card {
+            width: 326px;
 
 
+
+            &__info {
+                padding-bottom: 24px;
+          
+            }
+        }
     }
 }
