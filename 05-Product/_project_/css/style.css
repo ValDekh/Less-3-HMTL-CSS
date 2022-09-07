@@ -35,7 +35,7 @@ body {
   align-items: flex-start;
 }
 .box .card__bg {
-  width: 50%;
+  width: 300px;
   height: inherit;
   background-image: url(../images/image-product-desktop.jpg);
   background-size: contain;
@@ -43,7 +43,7 @@ body {
   border-radius: 10px 0 0 10px;
 }
 .box .card__content {
-  width: 50%;
+  width: 300px;
   height: inherit;
   padding: 32px;
 }
@@ -137,5 +137,14 @@ body {
   }
   .box .card__content-category {
     margin-bottom: 12px;
+  }
+  .box .card__content-title {
+    margin-bottom: 16px;
+  }
+  .box .card__content-advtext {
+    margin-bottom: 24px;
+  }
+  .box .card__content-button {
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

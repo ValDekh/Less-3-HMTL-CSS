@@ -38,7 +38,7 @@ body {
 
 
         &__bg {
-            width: 50%;
+            width: 300px;
             height: inherit;
             background-image: url(../images/image-product-desktop.jpg);
             background-size: contain;
@@ -48,7 +48,7 @@ body {
         }
 
         &__content {
-            width: 50%;
+            width: 300px;
             height: inherit;
             padding: 32px;
 
@@ -162,11 +162,18 @@ body {
                 &-category {
                     margin-bottom: 12px;
                 }
-
-
-
+                &-title {
+                   
+                    margin-bottom: 16px;
+                }
+                &-advtext {
+                    margin-bottom: 24px;
+                }
+                &-button {
+                    margin-top: 20px;
             }
         }
 
     }
+}
 }
