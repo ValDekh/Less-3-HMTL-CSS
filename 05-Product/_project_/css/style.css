@@ -135,4 +135,7 @@ body {
     width: inherit;
     padding: 24px;
   }
+  .box .card__content-category {
+    margin-bottom: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
