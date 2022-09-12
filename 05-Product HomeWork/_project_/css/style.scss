@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Manrope:500,700);
 
 html,
 body {
@@ -21,60 +21,51 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #F2EAE2;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    background: #F2F2F2;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
     font-weight: 700;
-    color: #6C7289;
+    color: #6E8098;
+    line-height: 20px;
 
-    // line-height: 22px;
     .card {
-        width: 600px;
-        height: 450px;
+        width: 730px;
+        height: 283px;
         background: #FFFFFF;
+        box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
         border-radius: 10px;
         display: flex;
         align-items: flex-start;
 
-
         &__bg {
-            width: 300px;
+            width: 285px;
             height: inherit;
-            background-image: url(../images/image-product-desktop.jpg);
-            background-size: contain;
+            background-image: url(../images/Bitmap.png);
+            background-size: cover;
             background-repeat: no-repeat;
             border-radius: 10px 0 0 10px;
 
         }
 
         &__content {
-            width: 300px;
-            height: inherit;
-            padding: 32px;
+            width: 365px;
+            height: 216px;
+            margin: 32px 40px;
 
-            &-category {
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 15px;
-                letter-spacing: 5px;
-                margin-bottom: 20px;
-
-
-            }
 
             &-title {
-                font-family: 'Fraunces';
-                font-size: 32px;
-                line-height: 32px;
-                color: #1C232B;
-                margin-bottom: 24px;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0.25px;
+                color: #48556A;
+                margin-bottom: 12px;
+
             }
 
-            &-advtext {
+            &-text {
                 font-weight: 500;
-                font-size: 14px;
-                line-height: 23px;
-                margin-bottom: 29px;
+                letter-spacing: 0.121875px;
+                margin-bottom: 20px;
             }
 
             &-price {
@@ -164,18 +155,21 @@ body {
                 &-category {
                     margin-bottom: 12px;
                 }
+
                 &-title {
-                   
+
                     margin-bottom: 16px;
                 }
+
                 &-advtext {
                     margin-bottom: 24px;
                 }
+
                 &-button {
                     margin-top: 20px;
+                }
             }
-        }
 
+        }
     }
-}
 }
