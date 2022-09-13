@@ -61,86 +61,65 @@ body {
   letter-spacing: 0.121875px;
   margin-bottom: 20px;
 }
-.box .card__content-price {
+.box .card__content-avatar {
   display: flex;
   align-items: center;
 }
-.box .card__content-price-discount {
-  font-family: "Fraunces";
-  font-size: 32px;
-  line-height: 32px;
-  color: #3D8168;
-  margin-right: 19px;
+.box .card__content-avatar-author {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/Oval.png);
+  margin-right: 16px;
 }
-.box .card__content-price-ragular {
+.box .card__content-avatar-info {
   font-weight: 500;
-  font-size: 13px;
-  line-height: 23px;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  letter-spacing: 0.121875px;
+  color: #9DAEC2;
 }
-.box .card__content-button {
-  display: flex;
-  margin-top: 30px;
-  width: 100%;
-  height: 48px;
-  background: #3D8168;
-  border-radius: 8px;
+.box .card__content-avatar-info span {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #FFFFFF;
-  align-items: center;
-  justify-content: center;
-  transition: background 1s;
+  display: block;
+  letter-spacing: inherit;
+  color: #48556A;
 }
-.box .card__content-button:hover {
-  background: #1A4032;
-  cursor: pointer;
-}
-.box .card__content-button .button__basket {
-  padding-left: 26px;
-  position: relative;
-}
-.box .card__content-button ::before {
-  content: " ";
-  width: 14.39px;
-  height: 16px;
-  background-image: url(../images/icon-cart.svg);
-  position: absolute;
-  left: 0;
+.box .card__content-avatar-buttonback {
+  background-image: url(../images/Oval2.png);
+  margin-left: 161px;
+  width: 32px;
+  height: 32px;
 }
 
 @media (max-width: 450px) {
   .box {
-    max-width: 375px;
+    max-width: 450px;
   }
   .box .card {
+    width: 327px;
+    height: 512px;
     display: block;
-    width: 343px;
-    height: 611px;
   }
   .box .card__bg {
-    background-image: url(../images/image-product-mobile.jpg);
+    background-image: url(../images/Bitmap_mob.png);
     width: inherit;
-    height: 240px;
+    height: 200px;
     border-radius: 10px 10px 0 0;
   }
   .box .card__content {
     width: inherit;
     height: auto;
-    padding: 24px;
-  }
-  .box .card__content-category {
-    margin-bottom: 12px;
+    padding: 36px 32px 20px;
+    margin: 0;
   }
   .box .card__content-title {
-    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-bottom: 12px;
   }
-  .box .card__content-advtext {
-    margin-bottom: 24px;
+  .box .card__content-text {
+    margin-bottom: 32px;
   }
-  .box .card__content-button {
-    margin-top: 20px;
+  .box .card__content-avatar-buttonback {
+    margin-left: 59px;
   }
 }/*# sourceMappingURL=style.css.map */
