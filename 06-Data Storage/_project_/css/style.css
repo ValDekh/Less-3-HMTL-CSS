@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:regular,500,700);
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  max-width: 1440px;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0C122C;
+  background-image: url(../images/bg-desktop.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #DBD9FF;
+  line-height: 14px;
+}
+.box .card {
+  width: 920px;
+  height: 201px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.box .card__menu {
+  width: 350px;
+  height: 201px;
+  background: #1E2D69;
+  box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+  border-radius: 10px 100px 10px 10px;
+  padding: 40px 41px;
+}
+.box .card__menu-logo {
+  margin-bottom: 33px;
+}
+.box .card__menu-items {
+  display: flex;
+  align-items: center;
+}
+.box .card__menu-item {
+  width: 48px;
+  height: 48px;
+  background: #0C122C;
+  border-radius: 10px;
+  position: relative;
+}
+.box .card__menu-item svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box .card__info {
+  width: 540px;
+  height: 154px;
+  background: #1E2D69;
+  box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */
